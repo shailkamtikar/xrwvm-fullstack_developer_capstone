@@ -1,0 +1,7 @@
+djangoenv
+.venv
+__pycache__
+*.pyc
+frontend/node_modules
+database/node_modules
+database
