@@ -3,6 +3,9 @@ FROM python:3.9.18-slim-bookworm
 
 WORKDIR /python-docker
 
+# Tell NLTK where to find the bundled sentiment lexicon (sentiment/vader_lexicon.zip)
+ENV NLTK_DATA=/python-docker
+
 COPY requirements.txt requirements.txt
 RUN pip3 install -r requirements.txt
 COPY . .
